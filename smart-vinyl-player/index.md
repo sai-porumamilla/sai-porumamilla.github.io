@@ -117,16 +117,37 @@ I interviewed three people outside the class, for about 15–20 minutes each. Th
 
 ### Sketches
 
-> **TODO (Sai):** Add images and short captions for:
->
-> - 10-plus-10 sketches for 3 design challenges
-> - The vanilla sketch of the interface
-> - Storyboard
-> - Hybrid sketch showing the interface on a real record player
+#### Vanilla sketch
+
+The first page sketches the player and its front display:
+
+- **The player:** a turntable with the tonearm, two knobs, an on/off light and a callout for alerts.
+- **Display screens:** what song is playing with its album art (*Broken Clocks*, SZA), time-synced lyrics, and play/pause playback controls.
+- **Volume:** an arched gauge that appears when the volume knob turns.
+- **Secondary device:** a box marking the phone that pairs with the player.
+
+The second page sketches the mobile interface. I showed both pages to the three interview participants (see *Feedback on the vanilla sketch*):
+
+- **Health screen:** the platter speed (33 RPM) and pass/fail checks for the needle and air quality.
+- **Library screen:** a grid of records that opens into a record's artwork.
+- **Notes:** "play/pause on device" and "prevent user from stopping mid-play".
+
+| Player and display | Mobile interface |
+| --- | --- |
+| ![Vanilla sketch of the player and display](images/sketch-vanilla-player.png) | ![Vanilla sketch of the mobile interface](images/sketch-vanilla-mobile.png) |
+
+**From sketch to build.** Most of the sketch survived into the final design, with a few changes:
+
+- **Display pages:** the separate playback-controls screen merged into Now Playing, which leaves two display pages, Now Playing and Lyrics.
+- **Volume gauge:** kept almost exactly as drawn.
+- **"Prevent user from stopping mid-play":** became the hands-off tonearm warning and the automatic tonearm.
+- **Health screen:** grew from a few pass/fail checks into six sensors with four tiers.
+- **Library:** gained listening insights alongside the collection.
+- **The phone:** became a full remote: playback, scrubbing, volume and side changes.
 
 ### Feedback on the vanilla sketch
 
-At the end of each interview, I showed the three participants my concepts and asked what they thought, when they'd use them and what worried them. I saved this for the end so it couldn't bias their earlier answers. The concepts were:
+At the end of each interview, I showed the three participants my vanilla sketch (above) and asked what they thought, when they'd use it and what worried them. I saved this for the end so it couldn't bias their earlier answers. The sketch covered these concepts:
 
 - A front touchscreen with playback controls and synced lyrics
 - A warning not to touch the tonearm while a song is playing
