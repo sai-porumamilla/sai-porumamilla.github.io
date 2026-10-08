@@ -25,7 +25,33 @@ Both interfaces are fixed at a **1.41 : 1** ratio, the ISO A-series paper ratio 
 
 ### Affordances and physical properties
 
-> **TODO (Sai):** Describe the object's physical properties, referencing the Design of Everyday Things slides. For example: it's large and fixed, it sits on a shelf or console, it isn't portable, the tonearm invites being grabbed, the knobs invite turning, and the touchscreen faces you at standing height.
+**Physical properties.** The Smart Vinyl Player is an all-in-one record player: a turntable on top, a speaker on each side and a touchscreen on the front panel between them, below the platter.
+
+- **Large, heavy and fixed in place.** It isn't portable or pocketable. It sits on a shelf, console or side table, and once placed it stays there. A record player needs a level, steady surface, since vibration and tilt hurt playback (two of the health sensors watch exactly this).
+- **Used standing up, from above and from across the room.** You load and flip records looking down at the platter, but you mostly listen from elsewhere in the room. That's why the screen faces forward rather than up, and why the idle screen shows large artwork and text that read at a distance.
+- **Spread over more than one surface.** The platter, tonearm, lid and knobs are on the top. The screen and speakers are on the front and sides. The phone app adds a third place to control it from, away from the player.
+- **Handled with care.** Records are fragile and expensive, and the needle is delicate. Most of the interaction design is about keeping hands away from the parts that can be damaged.
+
+**Affordances of each part, and how the design responds:**
+
+| Part | What it affords (invites people to do) | Problem | Design response |
+| --- | --- | --- | --- |
+| Tonearm and needle | Grabbing and lifting. It's a small arm with a finger lift, so it practically asks to be picked up | Every participant pauses, stops or skips by lifting the needle by hand, which can scratch the record | **Signifier:** a "Needle is on the record" strip while playing. **Feedback:** a warning with a big Pause button if a hand comes near. **Automatic tonearm:** pause, skip and scrub on the screen move the arm for you |
+| Platter and spindle | Placing a record, centered by the spindle | Nothing tells you what's playing, how far into the side you are, or which speed a disc needs | **Sensing:** the player detects the record, side and disc size and shows them on the screen |
+| The record | Flipping over; double albums have a second disc to swap in | It's easy to lose track of which side or disc comes next | **Feedback and guidance:** at the end of a side the screen and phone say whether to flip or swap discs, and which side is next |
+| Lid (dust cover) | Opening and closing | You have to open it to see where the needle is (P3) | The screen shows the side, the song number and a scrub bar spanning the side, so the lid can stay closed. Closing it also keeps out dust (air quality sensor) |
+| Volume knob | Turning; clockwise means louder (natural **mapping**) | No feedback except sound, and one participant's volume control faces the wall | **Feedback:** an arched meter on the screen. It's an endless encoder with an LED ring, so the phone can change the volume too without the knob pointing at the wrong value |
+| Mode knob (33⅓ / 45 / Bluetooth) | Turning between three detent positions | Nothing stops you switching to the wrong speed mid-record (P3) | **Constraint:** the knob locks while the needle is down. **Signifiers:** a lock on the speed chip, the disc size on screen, and an amber "Set speed to 33⅓ RPM" chip if it doesn't match the disc |
+| Front touchscreen | Tapping and swiping, like a phone | It has to be readable from across the room, not just up close | Big touch targets, Now Playing and Lyrics pages, and an idle mode that fades to large artwork |
+| Speakers | Listening from anywhere in the room | You may not be standing at the player when you want to change something | The companion app works as a remote: playback, scrubbing, volume and side changes |
+
+**Design of Everyday Things principles at work:**
+
+- **Signifiers** tell people what to do where the physical object can't: the hands-off strip, the lock icon, the amber speed chip and the "Up next" side.
+- **Constraints** stop the most damaging mistakes: the speed knob locks while playing, and the needle won't drop at the wrong speed.
+- **Feedback** answers every physical action on the screen: the volume meter, the mode name and symbol, "✓ Detected" after a record change, and "Set from the companion app" for remote changes.
+- **Mapping** keeps the physical controls conventional: clockwise for louder, and the speed knob in the traditional bottom-right spot.
+- **Conceptual model:** the screen mirrors what's physically happening, a record with sides and a tonearm that moves to a groove, instead of pretending it's a streaming app. That's why scrubbing shows the arm moving and why playback stops at the end of each side.
 
 ### Assumptions about the smart features
 
@@ -100,7 +126,21 @@ I interviewed three people outside the class, for about 15–20 minutes each. Th
 
 ### Feedback on the vanilla sketch
 
-> **TODO (Sai):** Feedback from the 3 people who reviewed your vanilla sketch, and what you changed because of it.
+At the end of each interview, I showed the three participants my concepts and asked what they thought, when they'd use them and what worried them. I saved this for the end so it couldn't bias their earlier answers. The concepts were:
+
+- A front touchscreen with playback controls and synced lyrics
+- A warning not to touch the tonearm while a song is playing
+- Physical knobs whose changes show up on the screen
+- A phone app with a health score for the player
+- A phone app that showcases your collection and listening stats
+
+| Participant | Feedback | What I changed |
+| --- | --- | --- |
+| **P1** | Would like a small decibel readout below the main display. The one thing they'd change about record players: an auto-scanning feature that shows a record's inner artwork | Both are in *Future work* (a live level meter, and inner-sleeve artwork) |
+| **P2** | Would like to share stats and play time with friends, which was also the one thing they'd change about record players | Sharing is in *Future work* as a shareable stats card. Their wish to see the next song while one plays became "Up next" on the phone's Now Playing sheet |
+| **P3** | "Pretty good." The one thing they'd change: skip by tapping the lyrics. Something I hadn't asked about: the player lets you change speed even when a record is meant for 33 RPM, and there should be a signifier to prevent that | Tapping a lyric line already skipped to it, which confirmed that feature. The speed comment led to a new feature, the **speed lock**: the knob locks while the needle is down, the player senses the disc's size, and an amber chip and an explanation stop the needle from dropping at the wrong speed |
+
+Overall the reactions were positive, and nobody raised concerns about the concepts themselves. The feedback mostly asked for more: two requests went into *Future work*, one confirmed an existing feature, and P3's speed comment changed the design.
 
 ---
 
@@ -271,15 +311,15 @@ From the interviews:
 - **Decibel readout (P1).** A small live level meter below the Now Playing controls.
 - **Inner artwork (P1).** Scan a record's inner sleeve and show its artwork on the display.
 
-> **TODO (Sai):** Add anything you attempted but didn't finish, with screenshots.
-
 ---
 
 ## AI usage
 
-> **TODO (Sai):** Describe how you used AI, in your own words.
+I used Claude Code, an AI coding assistant, to implement my designs in Svelte and to draft parts of this write-up, while the design decisions, interviews and final choices were my own. I followed a spec-driven approach. Before any code, I wrote a detailed spec of both interfaces: the pages, the signifiers, the knob behavior, the sensors and the 1.41 ratio. That spec, together with the assignment's requirements, lives in the project's [`CLAUDE.md`](https://github.com/sai-porumamilla/UI-Project_1/blob/main/CLAUDE.md), which the AI reads before every change. Each new feature started as an addition to the spec, often driven by the interview findings in the needs and requirements table, like P3's wrong-speed comment becoming the speed lock. Then it was built to match, and the spec was updated so it always described the current design. I tested what it built against the spec and asked for changes until it worked the way I intended.
 
-For reference, here is what Claude Code (Anthropic's AI coding assistant) did in this project:
+It sped up the technical work a lot, but I still had to review everything closely, since it occasionally made mistakes I had to catch. For example, the Play button once stopped working because the AI's testing had shut down my local server, which I noticed and had it fix. I learned that being specific about the behavior I wanted got much better results, and that I still needed to understand the code to judge whether it was right.
+
+In detail, here is what Claude Code did in this project:
 
 - **Code:** both device interfaces, the master page and the testing panel, built from my design spec, plus each feature I asked for after that:
   - tonearm cueing for scrubbing
