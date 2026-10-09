@@ -146,6 +146,64 @@ The final design combines several of them: the touchscreen controls, the warning
 
 ![10-plus-10 sketch for the play, pause, stop or skip challenge](images/sketch-10plus10-challenge1.jpg)
 
+#### 10-plus-10: feedback when a physical knob turns
+
+The problem: all three participants could only tell that the volume or speed changed by listening, and one participant's volume control faces the wall.
+
+The **top half** has ten ideas:
+
+1. An arched gauge showing "75 volume" (starred)
+2. A top-down view with a border light that reacts to the volume
+3. A ring around the platter showing the volume
+4. A volume bar on the Now Playing card
+5. A volume slider on the phone
+6. A warning banner across the top of Now Playing
+7. A "wrong speed" warning
+8. A "record playing, cannot change" warning
+9. A "size detected" check mark
+10. The platter showing "33 RPM" with a check mark
+
+The **bottom half** has ten variations on the arched gauge:
+
+- **Gauge shape:** a dial with a 0–100 scale instead of an arc.
+- **Speaker icon:** sound waves that grow with the volume.
+- **Volume bar:** one that appears, or drops down, over Now Playing.
+- **Timing:** how long the gauge stays on screen.
+- **Knob feedback:** haptic and vibration feedback in the knob itself, and a red or green glow around the knob.
+
+The arched gauge became the volume meter, which appears whenever either knob or the phone changes the volume. The second row of ideas, the wrong-speed warning, "record playing, cannot change" and "size detected", became the speed lock and disc-size detection after P3's interview comment.
+
+![10-plus-10 sketch for knob feedback](images/sketch-10plus10-challenge2.jpg)
+
+#### 10-plus-10: tell the user to flip the record or swap discs
+
+The problem: one participant flips sides and handles multi-disc albums, and nobody could easily tell where they were on a side.
+
+The **top half** has ten ideas:
+
+1. "Side A is over" with buttons for the other sides (starred)
+2. "Side A is over" with the sides grouped by disc
+3. A light on the player at the end of a side
+4. A warning on the display: "2 min left"
+5. An animation of the record turning over
+6. A list of sides to choose from
+7. "Swap in Disc 2" for double albums
+8. "Up next" showing the next song (*Go Gina*)
+9. A chime from the speakers
+10. Suggesting a different album afterwards ("Play *Gemini Rights*?")
+
+The **bottom half** has ten layouts for the side picker:
+
+- **Single list:** circles, pills, a stack with a short description per side, or a diagonal strip.
+- **Grids:** 2 × 2, a "Next?" grid, and hexagons.
+- **A flow:** A → B → C → D.
+- **Grouped by disc:** "Side A is over" with A/B and C/D grouped and a "Not now" button.
+- **"Continue?":** with "Next" and "Not now".
+
+The final picker combines the disc-grouped layout with "Not now", the starred "Side A is over" heading, "Swap in Disc 2", the flip animation, "Up next" and suggesting a new album. It now appears on both the player and the phone.
+
+![10-plus-10 sketch for flipping or swapping records](images/sketch-10plus10-challenge3.jpg)
+
 #### Vanilla sketch
 
 The first page sketches the player and its front display:
