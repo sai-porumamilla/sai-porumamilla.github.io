@@ -136,6 +136,20 @@ The second page sketches the mobile interface. I showed both pages to the three 
 | --- | --- |
 | ![Vanilla sketch of the player and display](images/sketch-vanilla-player.png) | ![Vanilla sketch of the mobile interface](images/sketch-vanilla-mobile.png) |
 
+#### Hybrid sketch
+
+The hybrid sketch places the design on a real record player. The interface is drawn onto a photo of an all-in-one turntable with a front display:
+
+- **Touchscreen:** on the front, facing the room, with the speakers sketched in on each side.
+- **Knobs:** the volume knob and the 33⅓ / 45 / Bluetooth speed knob at the front right of the top. The speed knob locks while a record plays.
+- **Tonearm:** the hands-off warning when a hand gets near it mid-song.
+- **Lid:** it can stay closed, because the screen shows where the needle is.
+- **Phone:** the companion app, paired over Bluetooth.
+
+![Hybrid sketch: the interface annotated on a photo of a real record player](images/sketch-hybrid.png)
+
+*Base photo: a retail product photo of a record player with a front display.*
+
 **From sketch to build.** Most of the sketch survived into the final design, with a few changes:
 
 - **Display pages:** the separate playback-controls screen merged into Now Playing, which leaves two display pages, Now Playing and Lyrics.
