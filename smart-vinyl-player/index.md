@@ -117,6 +117,35 @@ I interviewed three people outside the class, for about 15–20 minutes each. Th
 
 ### Sketches
 
+#### 10-plus-10: play, pause, stop or skip safely
+
+One design challenge, taken through both rounds of 10-plus-10 on a single page. The problem came from the interviews: everyone stops or skips by lifting the needle by hand, which risks scratching the record.
+
+The **top half** has ten different ideas:
+
+1. Touch play/pause on a screen (starred)
+2. A physical button
+3. The tonearm lifts when you lift the lid
+4. The tonearm lifts when the cover is touched
+5. A sensor that warns when a hand is near the arm
+6. Pause in a phone app
+7. A voice command ("pause")
+8. A ring around the platter that turns red
+9. The tonearm locks in place while playing
+10. A gesture to skip
+
+The **bottom half** has ten variations on the starred idea, the touchscreen, exploring:
+
+- **Layout:** transport-only controls, album art with song, artist and side, and a full Now Playing screen with a progress bar.
+- **The hands-off warning:** on its own, and with a Pause button.
+- **A playing strip:** a "Needle is on arm, do not touch, pause" strip under the art.
+- **Bigger controls:** larger transport buttons.
+- **The phone:** a mini player bar, a full portrait Now Playing view, and the same hands-off warning.
+
+The final design combines several of them: the touchscreen controls, the warning from idea 5, and the strip and warning-with-Pause variations. Together they became the hands-off strip, the tonearm warning and the automatic tonearm.
+
+![10-plus-10 sketch for the play, pause, stop or skip challenge](images/sketch-10plus10-challenge1.jpg)
+
 #### Vanilla sketch
 
 The first page sketches the player and its front display:
@@ -135,6 +164,19 @@ The second page sketches the mobile interface. I showed both pages to the three 
 | Player and display | Mobile interface |
 | --- | --- |
 | ![Vanilla sketch of the player and display](images/sketch-vanilla-player.png) | ![Vanilla sketch of the mobile interface](images/sketch-vanilla-mobile.png) |
+
+#### Storyboard
+
+One evening with the Smart Vinyl Player, in six panels:
+
+1. **They put on a record.** The player recognizes it and sets up Side A.
+2. **From a distance,** they can see what's playing at a glance.
+3. **Out of habit,** they reach to lift the needle. The player warns them first.
+4. **They tap Pause,** and the automatic arm lifts the needle with no risk of a scratch.
+5. **Later, Side A ends.** Their phone tells them to flip the record.
+6. **They flip it,** the player detects Side B, and the music keeps going.
+
+![Storyboard: six panels of an evening with the player](images/sketch-storyboard.jpg)
 
 #### Hybrid sketch
 
