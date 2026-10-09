@@ -2,7 +2,7 @@
 
 **Sai Porumamilla** · User Interface I, Project 1
 
-[**Try the live app**](https://sai-porumamilla.github.io/UI-Project_1/) · [Source code on GitHub](https://github.com/sai-porumamilla/UI-Project_1) · [Demo video](#demo-video)
+[**Try the live app**](https://sai-porumamilla.github.io/UI-Project_1/) · [Source code on GitHub](https://github.com/sai-porumamilla/UI-Project_1) · [Demo video](https://youtu.be/1EIqHLhcfME)
 
 ![The master page: device UI on the left, testing panel on the right](images/overview.png)
 
@@ -482,4 +482,8 @@ The design decisions were mine:
 
 ## Demo video
 
-> **TODO (Sai):** Embed or link a 2–3 minute demo with voiceover covering the project name, your name, the components and how it works.
+A 2–3 minute walkthrough of the project with voiceover: the player display, the companion app, and how they work together.
+
+[![Watch the demo video on YouTube](https://img.youtube.com/vi/1EIqHLhcfME/maxresdefault.jpg)](https://youtu.be/1EIqHLhcfME)
+
+[**Watch the demo on YouTube**](https://youtu.be/1EIqHLhcfME)
